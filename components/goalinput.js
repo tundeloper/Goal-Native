@@ -15,7 +15,7 @@ export default function Goalinput({ onAddGoal, visible, onCancel }) {
     }
     return <Modal visible={visible} animationType="slide">
         <View style={styles.inputContainer}>
-            <Image style={styles.image} source={require('../assets/splash.png')}/>
+            <Image style={styles.image} source={require('../assets/images/goal.png')}/>
             <TextInput style={styles.textInput} placeholder="Your course goal" onChangeText={goalInputHandler} value={enteredGoalText} />
             <View style={styles.buttonContainer}>
                 <View style={styles.button}><Button title="Add goal" onPress={addGoal} color='#b190f0' /></View>
@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
         marginTop: -230
     },
     image: {
-        width: 200,
-        height: 200,
+        width: 150,
+        height: 150,
         margin: 20,
     },
       textInput: {
