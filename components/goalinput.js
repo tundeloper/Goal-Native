@@ -1,6 +1,6 @@
 import { View, TextInput, Button, StyleSheet, Image } from "react-native"
 import { useState } from "react"
-import { Modal } from "react-native-web"
+import { Modal } from "react-native"
 
 export default function Goalinput({ onAddGoal, visible, onCancel }) {
     const [enteredGoalText, setEnteredGoalText] = useState('')
